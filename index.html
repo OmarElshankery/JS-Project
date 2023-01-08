@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dosis:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/all.min.js">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/all.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand"><span class="symbol">【</span>LIGHT <span class="symbol">|</span> STORE<span class="symbol">】</span></a>
+            <button class=" buttons navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dot">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME
+                        </a>
+                    </li>
+                    <li class="nav-item dot">
+                        <a class="nav-link active" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="icn nav-link active" href="#"><i class="fa-solid fa-cart-shopping"><input type="text" id="quantity"></input>
+                        </i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="slider">
+        <div class="slide" style="background:dodgerBlue;">
+          <img src="./images/home5.jpg">
+          <div class="types">
+            <h2>Welcome</h2>
+            <p>Shop For Best Quality</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <div class="slide" style="background:coral;">
+          <img src="./images/home7.jpg">
+          <div class="types">
+            <h2>Welcome</h2>
+            <p>Shop For Best Quality</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <div class="slide" style="background: #6edf10;">
+          <img src="./images/home10.jpg">
+          <div class="types">
+            <h2>Welcome</h2>
+            <p>Shop For Best Quality</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <div class="slide" style="background: #6edf10;">
+            <img src="./images/home2.jpg">
+            <div class="types">
+                <h2>Welcome</h2>
+                <p>Shop For Best Quality</p>
+                <button>Shop Now</button>
+              </div>
+          </div>
+        <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </span>
+        <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </span>
+      </div>
+        <div id="dots-con">
+       <span class="dot"></span><span class="dot"></span><span class="dot"></span></span><span class="dot"></span>
+    </div>
+    <div class="wrapper1">
+        <div class="ctg">
+            <h2>Categories</h2>
+        <div id="buttons1">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('Watch')">Watch</button>
+          <button class="button-value" onclick="filterProduct('Bag')">Bag</button>
+          <button class="button-value" onclick="filterProduct('Ring')">Ring</button>
+        </div>
+        <div id="products">
+        <div class="grand">
+            <div class="parent-1">
+                <div class="row">
+                    <div class="column">
+                        <div class="card Watch">
+                            <div class="image-container">
+                                <img class="photo" src="images/watch1.jpg">
+                            </div>
+                            <div class="container1">
+                                <h5 class="product-name">TIMEWEAR Men's</h5>
+                                <h6>$30</h6>
+                                <button type="submit" class="plus" name="Add">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card Bag">
+                            <div class="image-container">
+                                <img class="photo" src="images//bag2.jpg">
+                            </div>
+                            <div class="container1">
+                                <h5 class="product-name">Tommy Hilfiger Black Wash</h5>
+                                <h6>$49</h6>
+                                <button type="submit" class="plus1" name="Add">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card Watch">
+                            <div class="image-container">
+                                <img class="photo" src="images/sporty-smartwatch.jpg">
+                            </div>
+                            <div class="container1">
+                                <h5 class="product-name">SPORTY SMARTWATCH</h5>
+                                <h6>$99</h6>
+                                <button type="submit" class="plus2" name="Add">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parent-2">
+                <div class="row">
+                    <div class="column">
+                        <div class="card Bag">
+                            <div class="image-container">
+                                <img class="photo" src="images//bag3.jpg">
+                            </div>
+                                <div class="container1">
+                                    <h5 class="product-name">Handbag CALVIN KLEIN</h5>
+                                    <h6>$29</h6>
+                                    <button type="submit" class="plus3" name="Add">Add</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card Ring">
+                            <div class="image-container">
+                                <img class="photo" src="images//ring1.jpg">
+                            </div>
+                            <div class="container1">
+                                <h5 class="product-name">Generic TITANIUM Steel Ring</h5>
+                                <h6>$89</h6>
+                                <button type="submit" class="plus4" name="Add">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card Ring">
+                            <div class="image-container">
+                                <img class="photo" src="images//ring2.jpg">
+                            </div>
+                            <div class="container1">
+                                <h5 class="product-name">Rope Name Ring for Men</h5>
+                                <h6>$49</h6>
+                                <button type="submit" class="plus5" name="Add">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+      <h2 class="services">Services</h2>
+      <section id="service" class="section-p1">
+        <div class="fe-box">
+            <img src="images/f1.png">
+            <h5>Easy Contact</h5>
+        </div>
+        <div class="fe-box">
+            <img src="images/f2.png">
+            <h5>Fast Delivery</h5>
+        </div>
+        <div class="fe-box">
+            <img src="images/f3.png">
+            <h5>Many Discounts</h5>
+        </div>
+        <div class="fe-box">
+            <img src="images/f4.png">
+            <h5>Perfect Quality</h5>
+        </div>
+    </section>
+    <hr class="line">
+    <section id="news">
+        <div class="news-heading">
+            <p>LATEST NEWS</p>
+            <h2>Fashion New Trends</h2>
+        </div>
+        <div class="l-news container">
+            <div class="l-news1">
+                <div class="news1-img">
+                    <img src="images/home10.jpg" alt="img">
+                </div>
+                <div class="news1-conte">
+                    <div class="date-news1">
+                        <h4>What Brands Are The Best Ones</h4>
+                        <a href="#" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="l-news2">
+                <div class="news2-img">
+                    <img src="images/home5.jpg" alt="img">
+                </div>
+                <div class="news2-conte">
+                    <div class="date-news2">
+                        <h4>The Benefits Of Sunglasses</h4>
+                        <a href="#" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="l-news3">
+                <div class="news3-img">
+                    <img src="images/home2.jpg" alt="img">
+                </div>
+                <div class="news3-conte">
+                    <div class="date-news3">
+                        <h4>Store Brands Last Forever</h4>
+                        <a href="#" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <hr class="line">
+    <section class="testimonials">
+        <div class="testimonials">
+            <div class="inner">
+              <h1>Testimonials</h1>      
+              <div class="row">
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="images/person7.jpg" alt="">
+                    <div class="name">Khalil Gad</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="images/person3.jpg" alt="">
+                    <div class="name">Sherif Hesham</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="images/person2.jpg" alt="">
+                    <div class="name">Mohamed Ali</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="up" href="#top"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+    </section>
+    <div class="footer-container">
+        <ul class= "list-inline">
+        <li><a href="https://github.com/OmarElshankery"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://web.facebook.com/omar.elshakankery/"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/OElshakankery"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/omar-elshakankery-457aa3246/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>    
+    <script src="js/demo.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
