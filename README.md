@@ -28,4 +28,3 @@
 ![alt text](https://github.com/OmarElshankery/JS-Project/blob/main/images/Screenshots/Screenshot%20(478).png)
 
 <br />
-![alt text](https://github.com/OmarElshankery/JS-Project/blob/main/images/Screenshots/Screenshot%20(480).png)
